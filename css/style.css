@@ -1,0 +1,53 @@
+/* ==========================================
+   Simple & Clean Styles for College Project
+   ========================================== */
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #e9ecef;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+/* Completed Task Styling */
+.task-card.completed {
+    opacity: 0.6;
+    background-color: #f8f9fa;
+}
+
+.task-card.completed .task-title {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Priority Badges */
+.badge-low {
+    background-color: #198754;
+}
+
+.badge-medium {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.badge-high {
+    background-color: #dc3545;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: #adb5bd;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 3px;
+    font-size: 14px;
+}
