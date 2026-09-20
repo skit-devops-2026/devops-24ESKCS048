@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'make test'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'make build'
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                sh 'make docker-build'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline executed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
