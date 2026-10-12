@@ -4,17 +4,17 @@
 .PHONY: install test build run docker-build docker-up
 
 install:
-	@echo "No dependencies to install"
+	npm install
 
 test:
+	npm test
 	bash scripts/test.sh
 
 build:
-	@echo "Static HTML/CSS/JS project - no build step required"
+	npm run build
 
 run:
-	@echo "Run the project using a simple local server"
-	python3 -m http.server 8000
+	npm start
 
 # Needed from M4 onwards
 docker-build:

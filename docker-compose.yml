@@ -1,0 +1,20 @@
+services:
+  task-manager:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ankitj3345/task-manager:latest
+    container_name: task-manager-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - COMMIT_SHA=0a745422cd3a2c56976110332581d8721b2cc5da
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:3000/health"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 5s

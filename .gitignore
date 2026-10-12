@@ -11,6 +11,8 @@ dist/
 build/
 *.class
 *.jar
+*.exe
+task-manager3/
 
 # Environment and secrets
 .env
