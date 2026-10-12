@@ -37,13 +37,13 @@ The application runs locally on `http://localhost:3000`.
 
 ## Live Demo
 
-https://mortgages-increase-hazards-eddie.trycloudflare.com
+https://tried-museums-middle-basename.trycloudflare.com
 
 Backup / GitHub Pages: https://ankitj3345.github.io/Task-Manager/
 
 ## Live URL
 
-https://mortgages-increase-hazards-eddie.trycloudflare.com
+https://tried-museums-middle-basename.trycloudflare.com
 
 ## Docker Containerization (M5)
 
