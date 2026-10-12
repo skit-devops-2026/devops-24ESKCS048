@@ -1,18 +1,17 @@
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s
-  scrape_timeout: 10s
 
 scrape_configs:
-  - job_name: 'task-manager-app'
-    metrics_path: '/metrics'
-    scrape_interval: 5s
+  - job_name: task-manager-app
+    metrics_path: /metrics
     static_configs:
-      - targets: ['task-manager:3000', 'localhost:3000', 'host.docker.internal:3000']
+      - targets: ["task-manager:3000"]
         labels:
-          app: 'task-manager'
-          env: 'production'
+          app: task-manager
+          env: production
 
-  - job_name: 'prometheus'
+  - job_name: prometheus
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ["localhost:9090"]
