@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+.git
+.github
+.gitignore
+docs
+k8s
+monitoring
+scripts
+*.md
+Makefile
+jankinsfile
+.DS_Store
+Thumbs.db
