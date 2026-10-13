@@ -33,17 +33,17 @@ npm install
 npm start
 ```
 
-The application runs locally on `http://localhost:3000`.
+
 
 ## Live Demo
 
-https://tried-museums-middle-basename.trycloudflare.com
+https://devops-24eskcs048.onrender.com/
 
-Backup / GitHub Pages: https://ankitj3345.github.io/Task-Manager/
+
 
 ## Live URL
 
-https://tried-museums-middle-basename.trycloudflare.com
+https://devops-24eskcs048.onrender.com/
 
 ## Docker Containerization (M5)
 
